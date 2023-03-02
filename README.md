@@ -13,3 +13,11 @@ This code defines a base64_encode function that takes a string as input and retu
 In this example, we create a string text containing the text we want to convert to binary data. We then create a vector of uint8_t (8-bit unsigned integers) called binary_data. We use the vector constructor to convert the characters in text to their binary representation using UTF-8 encoding.
 
 Finally, we output the binary data in hexadecimal format using a loop that iterates over each byte in the vector. The static_cast<int> is used to convert the uint8_t byte to an int so that it can be printed in hexadecimal format using std::hex.
+
+  # output
+  
+  The function text_to_binary should return a vector of bytes (std::vector<uint8_t>) that represents the binary data of the input text encoded in UTF-8. For example, if the input text is "Hello, world!", the function should return a vector containing the following bytes in hexadecimal notation:
+
+```48 65 6c 6c 6f 2c 20 77 6f 72 6c 64 21```
+
+Note that these bytes represent the ASCII codes of the characters in the input text, since ASCII is a subset of UTF-8.
